@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Clima Sense</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <h1 class="logo">Clima Sense</h1>
+      <form id="search-form" class="search" role="search" aria-label="Buscar cidade">
+        <input type="search" id="city-input" class="search-input" placeholder="Digite a cidade..." aria-label="Nome da cidade" />
+        <button type="submit" class="search-button" aria-label="Buscar">Buscar</button>
+      </form>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Background -->
+    <div class="sun" aria-hidden="true"></div>
+    <div class="cloud cloud-1" aria-hidden="true"></div>
+    <div class="cloud cloud-2" aria-hidden="true"></div>
+    <div class="cloud cloud-3" aria-hidden="true"></div>
+
+    <section class="container center">
+      <!-- Cartão principal do tempo -->
+      <article class="weather-card" role="region" aria-labelledby="weather-title">
+        <div class="card-header">
+          <h2 id="weather-title" class="city">--</h2>
+          <p class="date">--</p>
+        </div>
+
+        <div class="card-body">
+          <div class="current">
+            <div class="temp-block">
+              <div class="temperature" id="temperature">--°</div>
+              <div class="description" id="description">--</div>
+            </div>
+            <div class="details">
+              <p><strong>Sensação:</strong> <span id="feels-like">--°</span></p>
+              <p><strong>Chance de chuva:</strong> <span id="precipitation">--%</span></p>
+            </div>
+          </div>
+
+          <!-- Previsão dos próximos dias -->
+          <div class="forecast" id="forecast" aria-label="Previsão dos próximos dias">
+            <!-- Cards de exemplo; serão populados pelo JS -->
+            <div class="day">
+              <p class="day-name">Amanhã</p>
+              <p class="day-temp">--° / --°</p>
+              <p class="day-precip">--%</p>
+            </div>
+            <div class="day">
+              <p class="day-name">+2 dias</p>
+              <p class="day-temp">--° / --°</p>
+              <p class="day-precip">--%</p>
+            </div>
+            <div class="day">
+              <p class="day-name">+3 dias</p>
+              <p class="day-temp">--° / --°</p>
+              <p class="day-precip">--%</p>
+            </div>
+          </div>
+
+          <!-- Mensagem de erro -->
+          <div id="error" class="error" role="alert" aria-live="polite" hidden>
+            Cidade não encontrada. Tente outro nome.
+          </div>
+        </div>
+        
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>Melissa Felix Santos — projeto de demonstração</small>
+    </div>
+  </footer>
+
+  <!-- Script JavaScript para buscar dados do clima -->
+  <script src="app.js"></script>
+</body>
+</html>
+</body>
+</html>
