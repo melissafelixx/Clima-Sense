@@ -1,5 +1,5 @@
 # ☀️ Clima Sense
-![Tela Home](imagens/img1.png)
+![Tela Home](img.jpeg)
 
 Aplicação web moderna e responsiva para consultar o clima atual e a previsão dos próximos 3 dias de qualquer cidade do mundo, utilizando dados da API OpenWeatherMap.
 
