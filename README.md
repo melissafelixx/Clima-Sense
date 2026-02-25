@@ -60,7 +60,7 @@ Este projeto foi desenvolvido com fins de aprendizado, para aprofundar meus conh
 ### 📥 2. Clonar o Repositório
 
 ```bash
-git clone https://github.com/melissafelixx/climasense.git
+git clone https://github.com/melissafelixx/Clima-Sense.git
 cd climasense
 ```
 
