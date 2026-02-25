@@ -61,7 +61,7 @@ Este projeto foi desenvolvido com fins de aprendizado, para aprofundar meus conh
 
 ```bash
 git clone https://github.com/melissafelixx/Clima-Sense.git
-cd climasense
+cd Clima-Sense
 ```
 
 ---
